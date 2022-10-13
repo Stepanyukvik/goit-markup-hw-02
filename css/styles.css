@@ -7,14 +7,11 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: var(--primary-white-color);
     color:var(--primary-text-color);
     font-family:'Roboto', sans-serif;
-    font-style: 400;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 ul {
@@ -54,11 +51,12 @@ ul {
 
 /* Auth-nav */
 .auth-nav .link {
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .auth-nav .link:hover,
@@ -84,16 +82,15 @@ ul {
 
 /* Переваги */
 
-.section .title {
+.benefits .title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
-.section .about {
+.benefits .about {
     color: var(--title-text-color);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -101,7 +98,7 @@ ul {
 
 /* Чим ми займаємося */
 
-.section .primary-title {
+.work .primary-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -109,6 +106,12 @@ ul {
 }
 
 /* Наша команда */
+.command .primary-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 
 .command .name  {
     font-weight: 500;
@@ -120,7 +123,6 @@ ul {
 
 .command .job-title {
     color: var(--title-text-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -135,6 +137,8 @@ ul {
     cursor: pointer;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     display: flex;
@@ -155,15 +159,26 @@ ul {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
-p {
-    font-weight: 400;
+
+.section .link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.section .choice {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    
+}
+
+.section .view {
+    color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-
-}
-.section .link {
-    text-decoration: none;
+    
 }
 
 /* Footer */
@@ -181,7 +196,6 @@ address {
 
 .adress {
     color: var(--primary-white-color);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -189,14 +203,23 @@ address {
 
 }
 
-.adress .contacts:hover
-.adress .contacts:focus {
+.basement .adress:hover{
+    color: var(--accent-color);
+}
+
+.basement .adress:focus {
+    color: var(--accent-color);
+}
+
+.basement .contacts:hover {
+    color: var(--accent-color);
+}
+.basement .contacts:focus {
     color: var(--accent-color);
 }
 
 .contacts {
     color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
